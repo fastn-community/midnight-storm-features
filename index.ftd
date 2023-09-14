@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/features-doc/docs
--- import: fastn-community.github.io/midnight-storm-features
+-- import: fastn-community.github.io/midnight-rush-features
+-- import: fastn-community.github.io/midnight-rush-features/components
 -- import: fastn-community.github.io/features-doc/data
 export: feature
 
@@ -9,11 +10,11 @@ export: feature
 ;; This renders the default documentation
 
 -- docs.home:
-package-name: midnight-storm-features
-package-full-name: fastn-community.github.io/midnight-storm-features
-github: https://github.com/fastn-community/midnight-storm-features
-category: fastn-community.github.io/midnight-storm-features
-license-url: https://github.com/fastn-community/midnight-storm-features/blob/main/LICENSE
+package-name: midnight-rush-features
+package-full-name: fastn-community.github.io/midnight-rush-features
+github: https://github.com/fastn-community/midnight-rush-features
+category: fastn-community.github.io/midnight-rush-features
+license-url: https://github.com/fastn-community/midnight-rush-features/blob/main/LICENSE
 
 
 
@@ -29,21 +30,8 @@ caption title:
 optional body subtitle:
 data.feature list feature-list:
 
-;; =============================================================================
-;; =====================<IMPLEMENT THE FEATURES LIST HERE>=========================
-;; =============================================================================
-
--- ftd.text: Implement the **Features** component here
-color: $inherited.colors.text
-background.solid: $inherited.colors.background.base
-width: fill-container
-height: fill-container
-text-align: center
-role: $inherited.types.copy-regular
-padding-vertical.px: 32
-
-;; =============================================================================
-;; ================================== END ======================================
-;; =============================================================================
+-- components.feature-helper: $features.title
+subtitle: $features.subtitle
+feature-list: $features.feature-list
 
 -- end: features
