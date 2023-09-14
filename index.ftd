@@ -1,0 +1,49 @@
+-- import: fastn-community.github.io/features-doc/docs
+-- import: __user_name__.github.io/__repo_name__
+-- import: fastn-community.github.io/features-doc/data
+export: feature
+
+
+
+;; ---------------- DOCUMENTATION FOR YOUR HEADER COMPONENTS ----------------------
+;; This renders the default documentation
+
+-- docs.home:
+package-name: __repo_name__
+package-full-name: __user_name__.github.io/__repo_name__
+github: https://github.com/__user_name__/__repo_name__
+category: __user_name__.github.io/__repo_name__
+license-url: https://github.com/__user_name__/__repo_name__/blob/main/LICENSE
+
+
+
+
+
+
+
+
+
+
+-- component features:
+caption title:
+optional body subtitle:
+data.feature list feature-list:
+
+;; =============================================================================
+;; =====================<IMPLEMENT THE FEATURES LIST HERE>=========================
+;; =============================================================================
+
+-- ftd.text: Implement the **Features** component here
+color: $inherited.colors.text
+background.solid: $inherited.colors.background.base
+width: fill-container
+height: fill-container
+text-align: center
+role: $inherited.types.copy-regular
+padding-vertical.px: 32
+
+;; =============================================================================
+;; ================================== END ======================================
+;; =============================================================================
+
+-- end: features
